@@ -6,7 +6,10 @@
 	<title>Document</title>
 </head>
 <body>
-	<h1>Soap (1)</h1>
-	<p>Best soap ever</p>
+	<h1>{{ $product->title }} ({{ $product->id }})</h1>
+	<p>{{ $product->description }}</p>
+
+	{{-- comentario --}}
+	@{{ var }}
 </body>
 </html>
