@@ -62,8 +62,11 @@ class ProductController extends Controller
         return $product;
     }
 
-    public function destroy()
+    public function destroy($product)
     {
-        
+        $product = Product::findOrFail($product);
+        $product->delete();
+
+        return $product;
     }
 }
