@@ -2,8 +2,7 @@
 
 @section('content')
 
-	<h1>{{ $product->title }} ({{ $product->id }})</h1>
-	<p>{{ $product->description }}</p>
+	@include('components.product-card')
 
 	{{-- comentario --}}
 	@{{ var }}
