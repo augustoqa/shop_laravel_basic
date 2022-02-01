@@ -40,7 +40,8 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('carts.index') }}">
-                                Cart
+                                @inject('cartService', 'App\Services\CartService')
+                                Cart ({{ $cartService->countProducts() }})
                             </a>
                         </li>
                     </ul>
